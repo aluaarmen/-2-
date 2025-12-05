@@ -1,0 +1,140 @@
+/* ============== Сброс и базовые стили ============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9faf9;
+  color: #212121;
+  line-height: 1.5;
+  padding: 0;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============== Шапка / Header ============== */
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#weather, #status {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+/* ============== Контейнер карточек ============== */
+.grid {
+  display: grid;
+  gap: 1.2rem;
+  padding: 1rem;
+  /* Авто-адаптивная сетка: карточки по ширине от 260px до 1fr */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+  /* Источник / концепция auto-fit + minmax — гибкая адаптивка */ /* :contentReference[oaicite:1]{index=1} */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============== Карточка места ============== */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: #388e3c;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+/* ============== Подвал карточки — кнопки и расстояние ============== */
+.card-footer {
+  padding: 0.8rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.card-footer button {
+  flex: 1;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #66bb6a;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card-footer button:hover {
+  background-color: #57a05a;
+}
+
+/* ============== Адаптивность для мобильных устройств ============== */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  .card img {
+    height: 150px;
+  }
+  .card-content h3 {
+    font-size: 1.1rem;
+  }
+  .card-content p {
+    font-size: 0.9rem;
+  }
+  .card-footer button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Кок-Тобе",
+    "description": "Холм над городом с канатной дорогой, парком и панорамным видом на Алматы и горы.",
+    "lat": 43.234257,
+    "lon": 76.975683,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Almaty_Kok_Tobe_night.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Медеу",
+    "description": "Высокогорный спортивный комплекс и каток, живописная природа недалеко от города.",
+    "lat": 43.1910,
+    "lon": 77.0179,
+    "image": "medeu.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Вознесенский собор (Зенковский)",
+    "description": "Уникальный деревянный собор — историческая и архитектурная жемчужина Алматы.",
+    "lat": 43.2560,
+    "lon": 76.9170,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Zenkov_cathedral_Almaty.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Большое Алматинское озеро",
+    "description": "Живописное горное озеро — отличное место для природы и отдыха.",
+    "lat": 43.1025,
+    "lon": 77.0169,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Big_Almaty_Lake_2012_09.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Зелёный базар",
+    "description": "Колоритный рынок — дух города, местные продукты и атмосфера Алматы.",
+    "lat": 43.2565,
+    "lon": 76.9241,
+    "image": "photo.jpeg"
+  }
+]
